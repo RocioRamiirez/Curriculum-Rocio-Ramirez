@@ -24,7 +24,7 @@ body {
 
 .botonera {
     background-color: #BDFF00;
-    padding: 30px 10px;
+    padding: 30px 10px; /*hay un scroll horizontal: ahora lo que está seteado es que la caja tenga un tamaño del 100% (en mi pc son 1920px) + los paddings que darían 20px, o sea que el ancho total va a ser de 1940px, lo que excede el tamaño de mi pantalla. Para arreglar eso, tenés que aplicar la propiedad de box-sizing: border-box; para que calcule el 100% con los paddings, o sea que va a ser 1920px menos 20px así da el tamaño que debería tener*/
     width: 100%;
 }
 
@@ -51,7 +51,7 @@ nav ul {
 }
 
 .titulo-principal1 {
-    padding: 200px 190px;
+    padding: 200px 190px; /*como regla general, si lo que necesitás hacer tiene paddings de más de 100px es porque hay otra forma de resolverlo mucho más prolija porque estos paddings te van a jugar en contra cuando hagamos responsive. se me ocurre que podrías usar altura con medidas vh, que significa viewport height, o sea la altura del dispositivo, y funciona como los porcentajes. Por ejemplo, si quisiese tener una altura del total de una pantalla utilizaría 100vh, en mi monitor que es de 1080 va a ser de ese tamaño, en otro de 720 va a pasar lo mismo, pero siempre va a ser flexible respecto a eso*/
     background-color: #000000;
     font-family: "Roboto", "San-Serif";
     font-style: normal;
