@@ -5,58 +5,67 @@
     <meta charset="utf-8" />
     <title>Rocio Ramirez CV</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
     <header>
         <nav class="botonera">
             <ul>
-                <li><a>SOBRE MI</a></li>
-                <li><a>MIS PROYECTOS</a></li>
-                <li><a>HABILIDADES</a></li>
-                <li><a>CONTACTO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#mis-proyectos">MIS PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
         <div class="contenedor-dos-titulos">
-            <h1 class="titulo-principal1">ROCIO RAMIREZ</h1>
+            <h1 class="titulo-principal1"> <span class="barras">//</span> ROCIO <span>RAMIREZ</span> </h1>
             <h2 class="subtitulo-principal">ilustradora y diseñadora gráfica</h2>
         </div>
-        <img src="img/rocio-ramirez.jpeg" width="300px" height="320px" alt="Foto de Rocio Ramirez" />
+
     </header>
     <main>
-        <section>
-            <h2>SOBRE MI</h2>
-            <p>Tengo 23 años y soy licenciada en Diseño y Comunicación Visual.
-            <p>En el diseño encontré herramientas que me permitieron desenvolverme aún más en la ilustración.</p>
-            <p>Busco seguir ampliando mis conocimientos y experiencia laboral en un ambiente dinámico y con posibilidades de crecimiento.</p>
+        <section id="sobre-mi">
+            <div class="seccion-sobre-mi">
+                <img src="img/rocio-ramirez.jpeg" class="circulo" width="300px" height="320px" alt="Foto de Rocio Ramirez" />
+                <h2 class="titulo-sobre-mi">SOBRE MI</h2>
+                <div class="texto-sobre-mi">
+                    <p>Soy licenciada en Diseño y Comunicación Visual.
+                    <p>En el diseño encontré herramientas que me permitieron desenvolverme aún más en la ilustración.</p>
+                    <p>Busco seguir ampliando mis conocimientos y experiencia laboral en un ambiente dinámico y con posibilidades de crecimiento.</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>MIS PROYECTOS</h2>
-            <h3>Freelance</h3>
-            <p>Trabajo por mi cuenta como diseñadora gráfica e ilustradora</p>
-            <h4>Clientes:</h4>
-            <img src="img/cartel-el-mirasol.jpg" width="400px" height="317px"
-                alt="Cartel de entrada del restaurante El Mirasol">
-            <p>Resaurante "El Mirasol" en la Recova</p>
-            <img src="img/marluc-bebidas.jpg" width="400px" height="400px" alt="Logo de Marluc Bebidas">
-            <p>Delivery de bebidas "Marluc"</p>
+        <section id="mis-proyectos">
+            <h2 class="titulo-mis-proyectos">MIS PROYECTOS</h2>
+            <div class="imagenes-proyectos">
+                <img src="img/marluc-bebidas.jpg" width="280px" height="280px" alt="logo-para-marluc-bebidas" />
+                <img src="img/cuarteto-proyect.jpg" width="280px" height="280px" alt="tapa-del-disco-cuarteto" />
+                <img src="img/tragos-mirasol-proyect.jpg" width="280px" height="280px" alt="ilustracion-de-tragos-para-mirasol" />
+                <img src="img/lettering-proyect.jpg" width="280px" height="280px" alt="lettering-proyecto" />
+            </div>
+            <ul class="titulos-de-los-proyectos">
+                <li>MARLUC</li>
+                <li>CUARTETO</li>
+                <li>EL MIRASOL</li>
+                <li>LETTERING</li>
+            </ul>
         </section>
-        <section>
-            <h2>HABILIDADES</h2>
-            <ul>
-                <li>Adobe Indesign</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Word</li>
-                <li>Redes sociales</li>
-                <li>Otros:</li>
-                <li>Ilustración</li>
-                <li>Diseño de identidad</li>
+        <section id="contacto">
+            <h2 class="titulo-contacto">CONTACTO</h2>
+            <div class="iconos-contacto">
+                <a href="https://www.instagram.com/roocio.ra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="img/instagram-icono.png" width="200px" height="200px" alt="link-perfil-de-instagram" /></a>
+                <a href="mailto:soledad.ramiirez@gmail.com" target="_top"><img src="img/gmail-icono.png" width="200px" height="200px" alt="link-al-mail" /></a>
+                <a href="https://www.behance.net/rocioramirez_" target="_blank"><img src="img/behance-icono.png" width="200px" height="200px" alt="link-al-perfil-de-behance" /></a>
+            </div>
+            <ul class="redes-sociales">
+                <li>ROOCIO.RA</li>
+                <li>ROCIO RAM.</li>
+                <li>ROCIORAMIREZ</li>
             </ul>
         </section>
     </main>
-    <footer>
-        <address>Soledad.ramiirez@gmail.com</address>
+    <footer class="derechos">
+        <p>Todos los derechos reservados.</p>
     </footer>
 </body>
 
