@@ -1,12 +1,22 @@
 # Curriculum-Rocio-Ramirez
-Profe, estuve trabajando el flexbox y dandole forma al cv. Le dejo un prototipo que hice en figma (aun no lo termino) para ver si podia ayudarme a encontrar soluciones, por ejemplo:
+Hola Aime! Termine mi cv (o por lo menos todo lo que sabia hacer). Me quedo para hacer una galeria de mis proyectos pero vi en unos de tus msj que eso es mas adelante, asi que lo descarte.
 
--No puedo poner la variable Thin de la fuente "Roboto" (siempre me aparece la regular)
+Me queda darle forma a todos los recuados que hice, que me esta costando mucho; tamb solucionar el tema de la tipografia que solo se pone en regular.
 
--No se como hacer para que mi nombre (titulo que puse con h1) tenga las dos variables como se ve en figma
+Mi eterno miedo es estar usando mal alguna etiqueta, porque muchas de las cosas las hice rasonando (siento que voy entendiendo), pero aunque funciona en la pag capaz esta mal aplicado (por ejemplo, se que en una clase dijeron que solo debia de haber un id, pero para agregar la funcion de la botonera, busque videos en youtube y todos usaban varios id)
 
--No se como hacer que el subtitulo (ilustradora y diseñadora gráfica) se vea al costado de mi nombre y con su recuadro negro.
+Cosas que no me salen:
 
--Tambien me gustaria saber si todo el codigo esta bien, estoy revisando los pdfs y tratando de usar las etiquetas como corresponde, pero no se si estan bien ubicadas.
+No logro subir el "ilustradora y diseñadora..."
 
-https://www.figma.com/proto/R8qDgVhFyjDcKe8funJtUd/Curriculum---Rocio-Ramirez?type=design&node-id=1-2&t=Qa0lA8fQlcZwrRnW-0&scaling=min-zoom&page-id=0%3A1
+No puedo separar el Rocio Ramirez y hacer que el Ramirez baje + el problema de las tipografias
+
+No puedo mover la foto y los otros cuadros (como esta en figma)
+
+Y el resto lo mismo, no se como hacer que cada titulito tenga su propio fondo/recuadro, y tampoco se como alinearlos a las fotos.
+
+Sospecho que puede ser algo de las etiquetas que capaz las separe de mas, pero no pude solucionarlo.
+
+Gracias por la pacienia jijij
+
+https://www.figma.com/file/R8qDgVhFyjDcKe8funJtUd/Curriculum---Rocio-Ramirez?type=design&node-id=0-1&mode=design&t=GiOePUpjvVTBsKTS-0
