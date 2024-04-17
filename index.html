@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="botonera">
+        <nav id="botonera">
             <ul>
                 <li><a href="#sobre-mi">❋ SOBRE MI</a></li>
                 <li><a href="#mis-proyectos">✱ MIS PROYECTOS</a></li>
@@ -26,52 +26,69 @@
         </div>
 
     </header>
+
     <main>
         <section id="sobre-mi">
-            <div class="seccion-sobre-mi">
-                <h2 class="titulo-sobre-mi">❋ SOBRE MI</h2>
-                <img src="img/rocio-ramirez.jpg" class="circulo" width="300px" height="300px" alt="Foto de Rocio Ramirez" />
+            <h2 class="titulo-sobre-mi">❋ SOBRE MI</h2>
+            <article class="bloque-centro">
+                <img src="img/rocio-ramirez.jpg" class="foto-mia" width="400px" height="400px" alt="Foto de Rocio Ramirez" />
                 <div class="texto-sobre-mi">
-                    <p>Soy licenciada en  <span>Diseño y Comunicación Visual.</span></p>
+                    <p>Soy licenciada en <span>Diseño y Comunicación Visual.</span></p>
                     <p>En el diseño encontré herramientas que me permitieron desenvolverme aún más en la ilustración.</p>
                     <p>Busco seguir ampliando mis conocimientos y experiencia laboral en un ambiente dinámico y con posibilidades de crecimiento.</p>
                 </div>
-            </div>
+                <a href="#botonera"> <img src="img/flecha-inicio.svg" width="50px" height="50px" alt="flecha-de-inicio"> </a>
+            </article>
         </section>
+
         <section id="mis-proyectos">
             <h2 class="titulo-mis-proyectos">✱ MIS PROYECTOS</h2>
-            <div class="imagenes-proyectos">
-                <img src="img/marluc-bebidas.jpg" class="blanco" width="280px" height="280px" alt="logo-para-marluc-bebidas" />
-                <img src="img/tragos-mirasol-proyect.jpg" class="negro" width="280px" height="280px" alt="ilustracion-de-tragos-para-mirasol" />
-                <img src="img/lettering-proyect.jpg" class="blanco" width="280px" height="280px" alt="lettering-proyecto" />
-                <img src="img/cuarteto-proyect.jpg" class="negro" width="280px" height="280px" alt="tapa-del-disco-cuarteto" />
-            </div>
-            <ul class="titulos-de-los-proyectos">
-                <li>MARLUC</li>
-                <li>CUARTETO</li>
-                <li>EL MIRASOL</li>
-                <li>LETTERING</li>
+            <ul>
+                <li>
+                    <img src="img/marluc-bebidas.jpg" class="blanco" width="280px" height="280px" alt="logo-para-marluc-bebidas"/>
+                    <a href="https://www.behance.net/gallery/193925223/Identidad-de-marca-Marluc-Bebidas" target="_blank">MARLUC</a>
+                </li>
+                <li class="bloquecitos-proyectos">
+                    <img src="img/tragos-mirasol-proyect.jpg" class="negro" width="280px" height="280px" alt="ilustracion-de-tragos-para-mirasol"/>
+                    <a href="https://www.behance.net/rocioramirez_/projects" target="_blank">MIRASOL</a>
+                </li>
+                <li class="bloquecitos-proyectos">
+                    <img src="img/lettering-proyect.jpg" class="blanco" width="280px" height="280px" alt="lettering-proyecto"/>
+                    <a href="https://www.behance.net/gallery/160960721/Lettering-2022" target="_blank">LETTERING</a>
+                </li>
+                <li class="bloquecitos-proyectos">
+                    <img src="img/cuarteto-proyect.jpg" class="negro" width="280px" height="280px" alt="tapa-del-disco-cuarteto"/>
+                    <a href="https://www.behance.net/gallery/184257201/El-cuarteto-de-Nos-Memorias-cuarteteras" target="_blank">CUARTETO</a>
+                </li>
             </ul>
         </section>
+
         <section id="contacto">
             <h2 class="titulo-contacto">✣ CONTACTO</h2>
-            <div class="iconos-contacto">
-                <a href="https://www.instagram.com/roocio.ra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"><img src="img/instagram-icono.png" width="100px" height="100px" alt="link-perfil-de-instagram" /></a>
-                <a href="mailto:soledad.ramiirez@gmail.com" target="_top"><img src="img/gmail-icono.png" width="100px" height="100px" alt="link-al-mail" /></a>
-                <a href="https://www.behance.net/rocioramirez_/projects" target="_blank"><img src="img/behance-icono.png" width="100px" height="100px" alt="link-al-perfil-de-behance" /></a>
-            </div>
-            <ul class="redes-sociales">
-                <li>INSTAGRAM</li>
-                <li>GMAIL</li>
-                <li>BEHANCE</li>
+            <ul class="conjunto-contactos">
+                <li>
+                    <a href="https://www.instagram.com/roocio.ra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="img/instagram-icono.png" width="100px" height="100px" alt="link-perfil-de-instagram"/> </a>
+                    <p class="titulo-redes">INSTAGRAM</p>
+                </li>
+                <li>
+                    <a href="mailto:soledad.ramiirez@gmail.com" target="_top"><img src="img/gmail-icono.png" width="100px" height="100px" alt="link-al-mail"/> </a>
+                    <p class="titulo-redes">GMAIL</p>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/rocioramirez_/projects" target="_blank"><img src="img/behance-icono.png" width="100px" height="100px" alt="link-al-perfil-de-behance"/> </a>
+                    <p class="titulo-redes">BEHANCE</p>
+                </li>
             </ul>
+
         </section>
+
     </main>
+
     <footer class="derechos">
         <p class="trabajemos-juntxs">TRABAJEMOS JUNT❋S</p>
         <p>Todos los derechos reservados.</p>
     </footer>
+
 </body>
 
 </html>
