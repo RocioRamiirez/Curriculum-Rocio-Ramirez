@@ -10,7 +10,7 @@ body {
     background-color: #BDFF00;
     margin: 0px auto;
     font-family: "Roboto mono", "monospace";
-    font-weight: 400;
+    font-weight: 400;  /*esta propiedad no está haciendo nada*/
     color: #ffffff;
     /*puntero*/
     cursor: url("puntero/flecha-negra.svg"), auto;
@@ -19,11 +19,11 @@ body {
 /*barra-menu*/
 
 #botonera {
-    background-color: #BDFF00;
+    background-color: #BDFF00; /*como ya estableciste este color de fondo en el body no hace falta repetir esta propiedad porque se hereda de ahí*/
     padding: 15px;
     box-sizing: border-box;
     /*puntero*/
-    cursor: url("puntero/flecha-negra.svg"), auto;
+    cursor: url("puntero/flecha-negra.svg"), auto; /*idem el bg, ya se establece en body*/
 }
 
 nav ul {
@@ -35,7 +35,7 @@ nav ul {
 #botonera a {
     text-decoration: none;
     color: #000000;
-    font-size: 1em;
+    font-size: 1em; /* a mi parecer, queda un poco chico el header todavía*/
 }
 
 #botonera a:hover {
@@ -53,10 +53,10 @@ nav ul {
 
 .contenedor-dos-titulos {
     display: flex;
-    background-color: #BDFF00;
+    background-color: #BDFF00; /*esto se hereda del body*/
     align-items: flex-end;
     /*puntero*/
-    cursor: url("puntero/flecha-negra.svg"), auto;
+    cursor: url("puntero/flecha-negra.svg"), auto; /*esto se hereda del body*/
 }
 
 .titulo-principal1 {
@@ -86,7 +86,7 @@ span {
     background-color: #000000;
     font-style: italic;
     font-size: 1em;
-    color: #ffffff;
+    color: #ffffff; /*esto se hereda del body*/
     margin: 10% 0%;
     /*puntero*/
     cursor: url("puntero/flecha-verde.svg"), auto;
@@ -102,7 +102,7 @@ span {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /*esto no hace nada*/
     /*puntero*/
     cursor: url("puntero/flecha-verde.svg"), auto;
 }
@@ -112,7 +112,7 @@ span {
     /*color-font*/
     color: #000000;
     padding: 2vh;
-    width: 23vh;
+    width: 23vh; /*fijate si podés hacer que el tamaño de la caja se lo den los paddings, veo que también se hace de un ancho del 100% así que podrías cambiar el ancho a fit-content porque así como está te va a traer problemas cuando veamos mobile*/
     display: flex;
     justify-content: center;
     margin: 15vh 0vh;
@@ -127,11 +127,11 @@ span {
 }
 
 .foto-mia {
-    width: 400px;
+    width: 400px; /*no hace falta poner ancho y alto porque lo tiene seteado desde el html en la etiqueta img*/
     height: 400px;
     border-radius: 50%;
     filter: drop-shadow(-40px -40px 0px #BDFF00);
-    z-index: 10;
+    z-index: 10; /*al final sin esta propiedad queda bien!*/
     position: relative;
     left: 4vh;
     /*puntero*/
@@ -141,11 +141,11 @@ span {
 .texto-sobre-mi {
     /*texto*/
     background-color: #BDFF00;
-    width: 60vh;
+    width: 60vh; /*vh significa viewport heigh, así que poner algo de height en width está raro, en estos casos te conviene poner max-width*/
     font-family: "Fira sans", "Sans-Serif";
     color: #000000;
-    padding: 5vh;
-    padding-left: 8vh;
+    padding: 5vh; /*mismo problema, pero este padding debería estar en px*/
+    padding-left: 8vh; /*esto sí está raro, los paddings se hacen en una sola línea*/
     font-size: 2vh;
     /*puntero*/
     cursor: url("puntero/flecha-negra.svg"), auto;
@@ -162,7 +162,7 @@ span {
     right: 30px;
     width: 40px;
     cursor: url("puntero/click-negro.svg"), auto;
-}
+} /*a nivel de diseño, este botón está muy tímido, tal vez más separado del límite o un poquito más grande vaya mejor, además no sé si es el mejor color de fondo porque siempre usas fondos verdes o negros, y en agunos casos queda rari, también en el footer queda superpuesto*/
 
 /*fin-pag2-SOBRE-MI*/
 
@@ -170,7 +170,7 @@ span {
 /*pag3-MIS-PROYECTOS*/
 
 #mis-proyectos {
-    background-color: #BDFF00;
+    background-color: #BDFF00; /*esto se hereda del body*/
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -183,38 +183,37 @@ span {
     background-color: #ffffff;
     /*color-font*/
     color: #000000;
-    width: 28vh;
+    width: 28vh; /*mismo problema que el título anterior. también veo que los 3 títulos son iguales, es mejor hacer una sola clase que sea títulos y setear todo de una*/
     padding: 2vh;
     display: flex;
     justify-content: center;
     margin: 15vh 0vh;
     /*puntero*/
     cursor: url("puntero/flecha-negra.svg"), auto;
-
 }
 
 #mis-proyectos ul {
     list-style: none;
-    color: #ffffff;
+    color: #ffffff; /*esto se hereda del body*/
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    cursor: url("puntero/flecha-negra.svg"), auto;
+    align-items: center; /*esto no hace nada*/
+    cursor: url("puntero/flecha-negra.svg"), auto; /*esto se hereda del body*/
 }
 
 #mis-proyectos li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: url("puntero/flecha-verde.svg"), auto;
+    cursor: url("puntero/flecha-verde.svg"), auto; /*es raro, pero esto no hace falta establecerlo*/
 }
 
 #mis-proyectos a {
     background-color: #000000;
     color: #ffffff;
-    font-size: 2vh;
-    padding: 2vh 5vh;
-    margin: 3vh;
+    font-size: 2vh; /*las medidas de las tipos van en em o px*/
+    padding: 2vh 5vh; /*en este caso, los paddings van en px*/
+    margin: 3vh; /*fijate de usar gap en px desde el padre*/
     text-decoration: none;
     cursor: url("puntero/click-verde.svg"), auto;
 }
@@ -229,7 +228,7 @@ span {
 .blanco {
     filter: drop-shadow(-30px -30px 0px #ffffff);
     /*puntero*/
-    cursor: url("puntero/flecha-verde.svg"), auto;
+    cursor: url("puntero/flecha-verde.svg"), auto; /*es raro, pero esto no hace falta establecerlo*/
 }
 
 .negro {
@@ -248,7 +247,7 @@ span {
     height: 88vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /*esta propiedad no está haciendo nada*/
     /*puntero*/
     cursor: url("puntero/flecha-verde.svg"), auto;
 }
@@ -281,7 +280,7 @@ span {
 #contacto a {
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 25%;
+    padding: 25%; /*en este caso, va en px el padding*/
     /*puntero*/
     cursor: url("puntero/flecha-negra.svg"), auto;
 }
@@ -298,10 +297,10 @@ span {
     color: #000000;
     font-size: 2vh;
     font-weight: 500;
-    display: flex;
+    display: flex; /*no está haciendo nada*/
     justify-content: space-evenly;
-    padding: 2vh 5vh;
-    margin: 3vh 0vh;
+    padding: 2vh 5vh; /*px*/
+    margin: 3vh 0vh; /*gap en el padre*/
     /*puntero*/
     cursor: url("puntero/flecha-negra.svg"), auto;
 }
@@ -313,11 +312,11 @@ span {
 
 .derechos {
     display: flex;
-    height: 6vh;
+    height: 6vh; /*esta propiedad no hace nada*/
     justify-content: space-between;
     /*color-font*/
     color: #000000;
-    padding: 3vh;
+    padding: 3vh; /*px*/
     align-items: baseline;
 }
 
